@@ -4,9 +4,9 @@ function Pizza(size, toppings, priceOfPizza) {
   this.toppings = toppings;
   this.priceOfPizza = 0;
 }
-let myPizza = new Pizza("large", ["pepperoni", "pineapple"], 0);
-let my2Pizza = new Pizza("medium", ["onions"], 0);
-let my3Pizza = new Pizza("small" , ["pepperoni", "pineapple", "onions"], 0)
+// let myPizza = new Pizza("large", ["pepperoni", "pineapple"], 0);
+// let my2Pizza = new Pizza("medium", ["onions"], 0);
+// let my3Pizza = new Pizza("small" , ["pepperoni", "pineapple", "onions"], 0)
 Pizza.prototype.priceOfSize = function (size) {
   if (this.size === "large" || this.size === "Large") {
       return this.priceOfPizza += 12;
@@ -34,38 +34,20 @@ Pizza.prototype.priceOfToppings = function (toppings) {
   }
 
 };
-return this.priceOfPizza;
-
+console.log(this.priceOfPizza);
 };
-// this.toppings.forEach(function(topping) {
-// if (topping === "pepperoni") {
-//   this.priceOfPizza += 3;
-// } if (topping === "onions") {
-//   this.priceOfPizza += 3;
-// } if (topping === "pineapple") {
-//   this.priceOfPizza += 3;
-// } else {
-//   return this.priceOfPizza += 0;
-// }
-// });
-// if (this.toppings.includes("pepperoni")) {
-// return this.priceOfPizza += 3;
-//   } if (this.toppings.includes("pineapple")) {
-//     return this.priceOfPizza += 3;
-//   } if (this.toppings.includes("onions")) {
-//     return this.priceOfPizza += 3;
-//   } else {
-//     return this.priceOfPizza
-//   }
-// const myPizza = new Pizza("large", ["pepperoni", "pineapple"]);
-// const mySecondPizza = new Pizza("small", ["green peppers"]);
-// Pizza.prototype.
-// Pizza.prototype.addToppings = function(toppings) {
-
-// }
-
-
-
-
-
 //ui logic ------
+
+$(document).ready(function() {
+  $("form#pizza").submit(function(event){
+    event.preventDefault();
+    const selectedSize = $("#pizza-size").val();
+    selectedSize.priceOfSize();
+    
+    $("input:checkbox[name=toppings]:checked").each(function() {
+    const selectedToppings = $(this).val(); 
+    selectedToppings.priceOfToppings().priceOfPizza;
+  });
+    $("#output-price").html(this.priceOfPizza)
+    });
+  });

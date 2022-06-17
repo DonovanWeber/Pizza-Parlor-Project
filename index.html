@@ -13,7 +13,7 @@
 <body>
   <h1>Pizza Maker!</h1>
   <div class="container">
-   <form>
+   <form id="pizza">
     <h2>What Size would you like?</h2>
       <select class="form-control" id="pizza-size">
         <option value="small">Small</option>
@@ -25,9 +25,9 @@
         <label for="c2"><input type="checkbox" name="toppings" value="onions" id="topping2">Onions</label>
         <label for="c3"><input type="checkbox" name="toppings" value="pineapple" id="topping3">Pineapple</label>
   
-    </form>
-  <button id="btn">Get Price</button>
-  <span id="output-price"></span>
+        <button type="submit" id="btn">Get Price</button>
+      </form>
+      <h2>$: <span id="output-price"></span> </h2>
 </div>
 </body>
 </html>
