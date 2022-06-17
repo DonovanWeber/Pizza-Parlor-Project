@@ -42,12 +42,12 @@ $(document).ready(function() {
   $("form#pizza").submit(function(event){
     event.preventDefault();
     const selectedSize = $("#pizza-size").val();
-    selectedSize.priceOfSize();
-    
-    $("input:checkbox[name=toppings]:checked").each(function() {
-    const selectedToppings = $(this).val(); 
-    selectedToppings.priceOfToppings().priceOfPizza;
-  });
-    $("#output-price").html(this.priceOfPizza)
+     $("input:checkbox[name=toppings]:checked").each(function() {
+      const selectedToppings = $(this).val(); 
+      selectedToppings.priceOfToppings();
+      selectedSize.priceOfSize();
+      const totalPrice = 
+      $("#output-price").html()
+    });
     });
   });
