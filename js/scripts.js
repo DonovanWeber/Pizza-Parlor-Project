@@ -4,8 +4,8 @@ function Pizza(size, toppings) {
   this.toppings = toppings;
 }
 
-let myPizza = new Pizza("large", ["pepperoni", "pineapple"]);
-let mySecondPizza = new Pizza("small", ["green peppers"]);
+// const myPizza = new Pizza("large", ["pepperoni", "pineapple"]);
+// const mySecondPizza = new Pizza("small", ["green peppers"]);
 // Pizza.prototype.
 // Pizza.prototype.addToppings = function(toppings) {
 
