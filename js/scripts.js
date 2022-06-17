@@ -44,10 +44,10 @@ $(document).ready(function() {
     const selectedSize = $("#pizza-size").val();
      $("input:checkbox[name=toppings]:checked").each(function() {
       const selectedToppings = $(this).val(); 
-      selectedToppings.priceOfToppings();
-      selectedSize.priceOfSize();
-      const totalPrice = 
-      $("#output-price").html()
+      selectedToppings.priceOfToppings().val();
+      selectedSize.priceOfSize().val();
+      const totalPrice = selectedToppings.priceOfToppings() + selectedSize.priceOfSize();
+      $("#output-price").html(totalPrice)
     });
     });
   });
