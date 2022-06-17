@@ -34,6 +34,14 @@ Code: Pizza()
 const myPizza = ("large", ["pepperoni", "pineapple"])
 Expected Output: Pizza; {size: "large", toppings:["pepperoni", "pineapple"]} 
 
+Test: " The Pizza constructor will now have a property of priceOfPizza that will be the final price of the pizza after evaluating the price of the size and price of toppings"
+Code: Pizza(size, toppings, priceOfPizza) {
+  this.size = size;
+  this.toppings = toppings;
+  this.priceOfPizza = 0;
+}
+Expected Output: 0 
+
 Describe: Pizza.prototype.priceOfSize()
 
 Test: "It should return a the price of the size inside of the new property of the price of the pizza"
