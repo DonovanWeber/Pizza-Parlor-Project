@@ -2,7 +2,7 @@
 
 #### By Donovan Weber
 
-#### what does it do 
+#### Donovan's Online Pizza Parlor let's order you order a pizza and provides the price for each combination.
 
 ## Technologies Used
 
@@ -13,13 +13,15 @@
 * Bootstrap 
 
 ## Description
+It is a web application that allows you to pick the size and toppings for a pizza you would like to order and evaluates the price based on 
+the items you chose.
 
 
 ## Setup/Installation Requirements
 
-* Clone my        repository from Github
+* Clone my Pizza-Parlor-Project repository from Github
 * Go to the first level of the directory
-* Open     /index.html
+* Open pizza-parlor-project/index.html
 
 ## Known Bugs
 

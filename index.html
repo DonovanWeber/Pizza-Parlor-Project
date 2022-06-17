@@ -11,23 +11,25 @@
   <title>Donovan's Pizza Parlor!</title>
 </head>
 <body>
-  <h1>Pizza Maker!</h1>
+  <marquee direction="left"><h1>Papa Donovan's!</h1></marquee>
+
   <div class="container">
    <form id="pizza">
-    <h2>What Size would you like?</h2>
+    <h2>What kind of size would you like?</h2>
       <select class="form-control" id="pizza-size">
         <option value="small">Small</option>
         <option value="medium">Medium</option>
         <option value="large">Large</option>
       </select>
-      <p>Select which toppings you would like:</p>
+      <br>
+      <h3>Select which toppings you would like:</h3>
         <label for="c1"> <input type="checkbox" name="toppings" value="pepperoni" id="topping1">Pepperoni</label>
         <label for="c2"><input type="checkbox" name="toppings" value="onions" id="topping2">Onions</label>
         <label for="c3"><input type="checkbox" name="toppings" value="pineapple" id="topping3">Pineapple</label>
   
         <button type="submit" id="btn">Get Price</button>
       </form>
-      <h2>$: <span id="output-price"></span> </h2>
+      <h2>$<span id="output-price"></span> </h2>
 </div>
 </body>
 </html>
