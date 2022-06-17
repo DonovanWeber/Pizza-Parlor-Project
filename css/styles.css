@@ -20,7 +20,13 @@ body {
   border-color: aqua;
 }
 
-#output-price {
+#output {
   font-family: 'Gill Sans', 'Gill Sans MT';
-  
+  float: left;
+}
+
+.btn {
+  display: block;
+  block-size: auto;
+  margin: auto;
 }

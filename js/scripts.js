@@ -50,4 +50,7 @@ $(document).ready(function() {
     myPizza.priceOfToppings();
     $("#output-price").html(myPizza.priceOfPizza);
     });
-  });
+     $('.btn').click(function() {
+    location.reload();
+    });
+ });
