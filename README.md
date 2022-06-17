@@ -31,8 +31,8 @@ Describe: function Pizza()
 
 Test: "It should return a new object of the Pizza constructor with the size and toppings wanted"
 Code: Pizza()
-const myPizza = ("large", ["Pepperoni", "Pineapple"])
-Expected Output: Pizza; {size: "large", toppings:["Pepperoni", "Pineapple"]} 
+const myPizza = ("large", ["pepperoni", "pineapple"])
+Expected Output: Pizza; {size: "large", toppings:["pepperoni", "pineapple"]} 
 
 Describe: Pizza.prototype.priceOfSize()
 
