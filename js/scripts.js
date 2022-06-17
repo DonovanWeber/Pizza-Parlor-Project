@@ -19,18 +19,19 @@ Pizza.prototype.priceOfSize = function (size) {
 Pizza.prototype.priceOfToppings = function () {
   for(i = 0; i <= this.toppings.length; i++) {
     this.toppings[i]
-  if ((this.toppings[i]+'').indexOf("pepperoni") > -1) {
+  if ((this.toppings[i]+'').indexOf("cheese") > -1) {
     this.priceOfPizza += 3;
   } else if ((this.toppings[i]+'').indexOf("onions") > -1) {
     this.priceOfPizza += 3;
   } else if ((this.toppings[i]+'').indexOf("pineapple") > -1) {
     this.priceOfPizza += 3;
+  } else  if ((this.toppings[i]+'').indexOf("pepperoni") > -1) {
+    this.priceOfPizza += 3;
   } else {
-    
-  }
 
-};
-console.log(this.priceOfPizza);
+  }
+  };
+  return this.priceOfPizza;
 };
 
 $(document).ready(function() {
@@ -43,14 +44,14 @@ $(document).ready(function() {
      let selectedToppings = $(this).val(); 
      arrayOfToppings.push(selectedToppings)
      console.log(arrayOfToppings);
-    });
+  });
     let myPizza = new Pizza(selectedSize, arrayOfToppings, 0);
     console.log(myPizza)
     myPizza.priceOfSize();
     myPizza.priceOfToppings();
     $("#output-price").html(myPizza.priceOfPizza);
-    });
-     $('.btn').click(function() {
-    location.reload();
-    });
- });
+  });
+  $('.btn').click(function() {
+  location.reload();
+  });
+});
