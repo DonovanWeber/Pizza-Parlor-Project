@@ -34,6 +34,15 @@ Code: Pizza()
 const myPizza = ("large", ["Pepperoni", "Pineapple"])
 Expected Output: Pizza; {size: "large", toppings:["Pepperoni", "Pineapple"]} 
 
+Describe: Pizza.prototype.priceOfSize()
+
+Test: "It should return a the price of the size inside of the new property of the price of the pizza"
+Code: Pizza.prototype.priceOfSize 
+const myPizza = ("large", ["pepperoni"], 0)
+myPizza.priceOfSize();
+Expected Output: 12
+
+
 
 ## License
 
