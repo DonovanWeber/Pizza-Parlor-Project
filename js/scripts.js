@@ -4,8 +4,9 @@ function Pizza(size, toppings, priceOfPizza) {
   this.toppings = toppings;
   this.priceOfPizza = 0;
 }
-let myPizza = new Pizza("large", ["pepperoni", "pineapple"], 0)
-let my2Pizza = new Pizza("medium".["onion"], 0)
+let myPizza = new Pizza("large", ["pepperoni", "pineapple"], 0);
+let my2Pizza = new Pizza("medium", ["onions"], 0);
+let my3Pizza = new Pizza("small" , ["pepperoni", "pineapple", "onions"], 0)
 Pizza.prototype.priceOfSize = function (size) {
   if (this.size === "large" || this.size === "Large") {
       return this.priceOfPizza += 12;
@@ -25,6 +26,7 @@ Pizza.prototype.priceOfToppings = function (toppings) {
     this.priceOfPizza += 3;
   } else if ((this.toppings[i]+'').indexOf("onions") > -1) {
     this.priceOfPizza += 3;
+    console.log(this.priceOfPizza);
   } else if ((this.toppings[i]+'').indexOf("pineapple") > -1) {
     this.priceOfPizza += 3;
   } else {

@@ -42,7 +42,15 @@ const myPizza = ("large", ["pepperoni"], 0)
 myPizza.priceOfSize();
 Expected Output: 12
 
-
+Describe: Pizza.prototype.priceOfToppings()
+ 
+Test:"It should add 3 to the priceOfPizza every time a topping is selected "
+Code:let myPizza = new Pizza("large", ["pepperoni", "pineapple"], 0);
+let my2Pizza = new Pizza("medium", ["onions"], 0);
+let my3Pizza = new Pizza("small" , ["pepperoni", "pineapple", "onions"], 0)
+Expected Output: MyPizza.priceOfToppings() = 6
+                 My2Pizza.priceOfToppings() = 3
+                 My3Pizza.priceOfToppings() = 9
 
 ## License
 
